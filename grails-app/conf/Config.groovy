@@ -114,4 +114,25 @@ log4j.main = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+//    info  'org.codehaus.groovy.grails.web.servlet',        // controllers
+//            'org.codehaus.groovy.grails.web.pages',          // GSP
+//            'org.codehaus.groovy.grails.commons',            // core / classloading
+//            'org.codehaus.groovy.grails.plugins'            // plugins
+
+}
+
+
+grails {
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "kumar.atul@intelligrape.com"
+        password = "destiny143@"
+        props = ["mail.smtp.auth":"true",
+                 "mail.smtp.socketFactory.port":"465",
+                 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback":"false"]
+
+    }
 }
